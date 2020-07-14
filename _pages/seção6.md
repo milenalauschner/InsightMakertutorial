@@ -10,7 +10,7 @@ header:
       url: "/secao6/#considerações-finais"   
 sidebar:
   title: " "
-  nav: blogroll
+  nav: insightmaker
 ---
 # Considerações Finais
 
@@ -32,7 +32,7 @@ Caso prefira baixar o PDF do tutorial e ler de um modo mais livre, faça-o abaix
 
 <p style="text-align: center;"><embed  width="700" height="500" src="https://milenalauschner.github.io/MM/assets/Tutorial_para_o_uso_do_software_Insight_Maker.pdf" type="application/pdf" /></p>
 
-[<i class="fas fa-arrow-alt-circle-left"></i> Seção 5 ](https://milenalauschner.github.io/MM/secao5/){:
+[<i class="fas fa-arrow-alt-circle-left"></i> Seção 5 ](https://milenalauschner.github.io/TutorialIM/secao5/){:
 .btn .btn--info}
 {: .text-right}
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
