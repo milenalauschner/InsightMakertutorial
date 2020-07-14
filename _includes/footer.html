@@ -1,0 +1,15 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+   </ul>
+</div>
+
+<div class="outer">
+    <div id="footer-info" class="inner">
+      <img src="https://licensebuttons.net/l/by-sa/3.0/88x31.png" alt="CC BY-SA"> sob licença <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"> CC BY-SA 4.0</a>
+    </div>
+  </div>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }}  <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
