@@ -11,7 +11,7 @@ header:
       url: "/secao3/#lógica-de-funcionamento-do-software/"    
 sidebar:
   title: " "
-  nav: blogroll
+  nav: insightmaker
 mathjax: true
 ---
 # Lógica de funcionamento do software
@@ -262,8 +262,8 @@ Vamos, então, deixar que o _Insight Maker_ faça a simulação do número de li
 <a href="https://www.youtube.com/watch?v=IenySRdkRu8">https://www.youtube.com/watch?v=IenySRdkRu8</a>
 {: .text-left}
 
-[<i class="fas fa-arrow-alt-circle-left"></i> Seção 2](https://milenalauschner.github.io/MM/secao2/){:
-.btn .btn--success}[ Seção 4 <i class="fas fa-arrow-alt-circle-right"></i>](https://milenalauschner.github.io/MM/secao4/){:
+[<i class="fas fa-arrow-alt-circle-left"></i> Seção 2](https://milenalauschner.github.io/TutorialIM/secao2/){:
+.btn .btn--success}[ Seção 4 <i class="fas fa-arrow-alt-circle-right"></i>](https://milenalauschner.github.io/TutorialIM/secao4/){:
 .btn .btn--danger}
 {: .text-right} 
 ________________________________________________________________________________________________________________________________________________________________________________________________
