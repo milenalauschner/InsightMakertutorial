@@ -1,5 +1,6 @@
 ---
-title: "  "
+title: "Tutoria para o uso so software Insight Maker"
+excerpt: "Milena Lauschner Lopes, Leonardo Albuquerque Heidemann e Eliane Angela Veit"
 layout: single
 permalink: /secao2/
 layout: single
@@ -7,9 +8,6 @@ author_profile: false
 mathjax: true
 header:
   overlay_image: /assets/images/logos2.png
-  actions:
-    - label: "<br />Tutorial para o uso do software Insight Maker<br /> <small>Milena Lauschner Lopes, Leonardo Albuquerque Heidemann e Eliane Angela Veit</small>"
-      url: "/secao2/#introdução-ao-uso-do-insight-maker/"    
 sidebar:
   title: " "
   nav: insightmaker
