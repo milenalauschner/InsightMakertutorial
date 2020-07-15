@@ -10,34 +10,26 @@
   padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 60%;
+  max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
     max-width: $max-width;
-   
   }
 }
 
-.pageid-UA-170096420-1{
-background: #87c0cd
-}
-
 .page {
-  @include breakpoint($x-large) {
+  @include breakpoint($large) {
     float: right;
-     width: calc(110% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
-      }
+  }
 
   @include breakpoint($x-large) {
-     width: calc(100% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
-	}	
-    .container {
-    width: 80% !important;
-}
+  }
 
   .page__inner-wrap {
     float: left;
@@ -47,7 +39,7 @@ background: #87c0cd
     width: 100%;
     clear: both;
 
-.page__content,{   }
+    .page__content,
     .page__meta,
     .page__share {
       position: relative;
@@ -61,18 +53,17 @@ background: #87c0cd
 }
 
 .page__title {
-  margin-top: 2;
+  margin-top: 0;
   line-height: 1;
-  font-size: 0.85em;	
-
+  
   & + .page__meta {
     margin-top: -0.5em;
   }
 }
 
 .page__lead {
-  font-family: "Roboto";
-  font-size: 0.75em;
+  font-family: $global-font-family;
+  font-size: 0.85em;
 }
 
 .page__content {
@@ -84,9 +75,9 @@ background: #87c0cd
 	h1, h2, h3, h4, h5, h6 {
 		.header-link {
 			position: relative;
-			left: 1em;
+			left: 0.5em;
 			opacity: 0;
-			font-size: 0.75em;
+			font-size: 0.8em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
@@ -135,26 +126,19 @@ background: #87c0cd
 
   dd {
     margin-left: 1em;
-    font-family: "Roboto";
-    font-size: 0.75em;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
   }
 
   .small {
-    font-size: 0.75em;
+    font-size: $type-size-6;
   }
 
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
-    font-size: 0.95em;
   }
-}
-
-
-.page-header {
-  color: $background-color;
-  text-align: center;
 }
 
 .page__hero {
@@ -168,8 +152,8 @@ background: #87c0cd
 
   &--overlay {
     position: relative;
-    margin-bottom: 1em;
-    padding: 0em 0;
+    margin-bottom: 2em;
+    padding: 3em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +181,6 @@ background: #87c0cd
     .page__lead,
     .btn {
       color: #333;
-      text-position: center;
     }
 
     .page__lead {
@@ -205,10 +188,9 @@ background: #87c0cd
     }
 
     .page__title {
-      font-size: 0.75em;
-
+      
       @include breakpoint($small) {
-        font-size: 0.75em;
+        font-size: 0.95em;
       }
     }
   }
@@ -227,8 +209,8 @@ background: #87c0cd
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: "Roboto";
-  font-size: 0.75em;
+  font-family: $caption-font-family;
+  font-size: $type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
@@ -270,7 +252,7 @@ background: #87c0cd
 
 .page__share-title {
   margin-bottom: 10px;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -282,7 +264,7 @@ background: #87c0cd
   margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
-  font-size: 0.75em;
+  font-size: $type-size-6;
 
   p {
     margin: 0;
@@ -295,9 +277,8 @@ background: #87c0cd
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: 0.75em;
+  font-size: $type-size-6;
   text-transform: uppercase;
-  text-position: center;
 }
 
 /*
@@ -398,6 +379,104 @@ background: #87c0cd
 }
 
 /*
+   Comments
+   ========================================================================== */
+
+.page__comments {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+}
+
+.page__comments-title {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  font-size: $type-size-6;
+  border-top: 1px solid $border-color;
+  text-transform: uppercase;
+}
+
+.page__comments-form {
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+      opacity: 0.65;
+    }
+  }
+}
+
+.comment {
+  @include clearfix();
+  margin: 1em 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.comment__avatar-wrapper {
+  float: left;
+  width: 60px;
+  height: 60px;
+
+  @include breakpoint($large) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+}
+
+.comment__content-wrapper {
+  float: right;
+  width: calc(100% - 60px);
+
+  @include breakpoint($large) {
+    width: calc(100% - 100px);
+  }
+}
+
+.comment__author {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.comment__date {
+  @extend .page__meta;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/*
    Related
    ========================================================================== */
 
@@ -425,7 +504,7 @@ background: #87c0cd
 
 .page__related-title {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -453,15 +532,4 @@ background: #87c0cd
       padding-right: 0;
     }
   }
-.box {
-  display: flex;
-  display: -webkit-flex; 
-  font-size: 12px;	
-}
-
-span {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  }	
 }
