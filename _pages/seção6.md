@@ -5,7 +5,7 @@ layout: single
 permalink: /secao6/
 author_profile: false
 header:
-  overlay_image: /assets/images/logos6.png
+  overlay_image: /assets/images/LOGO6.png
 sidebar:
   title: " "
   nav: insightmaker
