@@ -15,7 +15,7 @@ minimal_mistakes_skin    : "air"
 # Site Settings
 title                    : "Tutorial para o uso do Insight Maker"
 title_separator          : "|"
-name                     : "Tutorial Insight Maker"
+name                     : ""
 description              : ""
 url                      : "" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : / # the subpath of your site, e.g. "/blog"
@@ -33,7 +33,7 @@ search_provider          : # lunr (default), algolia
 # Site Author
 author:
   name             : " "
-  avatar           : "/assets/images/BIBLIOTECA3.png" # path of avatar image
+  avatar           : "" # path of avatar image
   bio              : ""
   location         : " "
 
@@ -152,7 +152,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       share: false
       subscribe: false
