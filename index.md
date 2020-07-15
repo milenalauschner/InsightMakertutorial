@@ -1,5 +1,5 @@
 ---
-title: "Tutoria para o uso so software Insight Maker"
+title: "Tutoria para o uso do software Insight Maker"
 excerpt: "Milena Lauschner Lopes, Leonardo Albuquerque Heidemann e Eliane Angela Veit"
 layout: single
 author_profile: false
