@@ -33,7 +33,7 @@ search_provider          : # lunr (default), algolia
 # Site Author
 author:
   name             : " "
-  avatar           : "/assets/images/LOGO.png" # path of avatar image
+  #avatar           : "/assets/images/LOGO.png" # path of avatar image
   bio              : ""
   location         : " "
 
