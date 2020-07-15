@@ -7,7 +7,7 @@ layout: single
 author_profile: false
 mathjax: true
 header:
-  overlay_image: /assets/images/LOGO2.png
+  overlay_image: /assets/images/2.png
 sidebar:
   title: " "
   nav: insightmaker
