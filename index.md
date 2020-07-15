@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 mathjax: true
 header:
-  overlay_color: "#46b3e6"
+  overlay_color: "#f3f9fb"
 sidebar:
   title: " "
   nav: insightmaker
