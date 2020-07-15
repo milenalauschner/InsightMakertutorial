@@ -4,7 +4,7 @@ layout: single
 author_profile: false
 mathjax: true
 header:
-  overlay_image: /assets/images/logos1.png
+  overlay_image: /assets/images/LOGOS1.png
   actions:
     - label: "<br />Tutorial para o uso do software Insight Maker<br /> <small>Milena Lauschner Lopes, Leonardo Albuquerque Heidemann e Eliane Angela Veit</small>"
       url: "/#sobre-o-insight-maker/"   
