@@ -6,7 +6,7 @@ layout: single
 author_profile: false
 mathjax: true
 header:
-  overlay_image: /assets/images/LOGO4.png
+  overlay_color: "#98d6ea"
 sidebar:
   title: " "
   nav: insightmaker
